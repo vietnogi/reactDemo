@@ -1,0 +1,22 @@
+{
+  "plugins": [
+    "add-module-exports",
+    "transform-object-rest-spread",
+    ["module-resolver", {
+      "root": ["./"],
+      "alias": {
+        "utilities": "./utilities",
+        "constants": "./constants",
+        "components": "./components"
+      }
+    }]
+  ],
+  "presets": [
+    "es2015", "react", "stage-2"
+  ],
+  "env": {
+    "testSingle": {
+      "plugins": [ "istanbul" ]
+    }
+  }
+}
