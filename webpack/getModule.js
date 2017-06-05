@@ -1,18 +1,6 @@
-import ExtractTextPlugin from 'extract-text-webpack-plugin'
-
 const getModule = ({ path, dirname, istanbul }) => {
-  const scssLoader = ExtractTextPlugin.extract({
-    fallback: 'style-loader',
-    use: 'css-loader?sourceMap!sass-loader?sourceMap',
-  })
-
-  const cssLoader = ExtractTextPlugin.extract({
-    fallback: 'style-loader',
-    use: 'css-loader',
-  })
-
   const rules = [{
-    test: /\.jsx?$/,
+    test: /\.js$/,
     loader: 'babel-loader',
     include: path.join(dirname, '..'),
     exclude: /node_modules/,
@@ -26,10 +14,7 @@ const getModule = ({ path, dirname, istanbul }) => {
     loader: 'json',
   }, {
     test: /\.scss$/,
-    loader: scssLoader,
-  }, {
-    test: /\.css$/,
-    loader: cssLoader,
+    use: [ 'style-loader', 'css-loader', 'sass-loader' ],
   }, {
     test: /\.(png|jpg|jpeg|gif)$/,
     loader: 'file-loader',

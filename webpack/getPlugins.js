@@ -6,7 +6,11 @@ import forEach from 'lodash/forEach'
 const getPlugins = ({ htmlWebpackPlugins = [] }) => {
   let plugins = []
 
-  const extractTextPlugin = new ExtractTextPlugin('[name].[hash].css')
+  const extractTextPlugin = new ExtractTextPlugin({
+    filename: '[name].[hash].css',
+    allChunks: true,
+    disable: true,
+  })
 
   const commonChunk = new webpack.optimize.CommonsChunkPlugin({
     name: 'vendor',

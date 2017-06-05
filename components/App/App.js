@@ -5,7 +5,15 @@ import PropTypes from 'prop-types'
 
 const App = ({ children }) => {
   return (
-    <main>{children}</main>
+    <div className='App'>
+      <header>
+        <h1>Fruits</h1>
+      </header>
+
+      <main className='App'>
+        {children}
+      </main>
+    </div>
   )
 }
 

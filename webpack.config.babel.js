@@ -46,7 +46,6 @@ const extensions = [
   '.png',
   '.gif',
   '.jpg',
-  '.jsx',
 ]
 
 const resolve = {
@@ -63,6 +62,7 @@ const plugins = getPlugins({ htmlWebpackPlugins })
 const devServer = {
   historyApiFallback: true,
   clientLogLevel: 'error',
+  hot: true, // enable HMR on the server
 }
 
 const configs = {
