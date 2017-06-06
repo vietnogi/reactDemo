@@ -1,10 +1,10 @@
 export const FRUIT_NAVS = [{
   label: 'Apples',
-  url: 'Apples',
+  url: '/Apples',
 }, {
   label: 'Pears',
-  url: 'Pears',
+  url: '/Pears',
 }, {
   label: 'Berries',
-  url: 'Berries',
+  url: '/Berries',
 }]

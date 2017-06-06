@@ -1,14 +1,14 @@
-import './FruitNavStyles'
+import './FoodNavStyles'
 import React from 'react'
-import { FRUIT_NAVS } from './FruitNavConstants'
+import { FOOD_NAVS } from './FoodNavConstants'
 import { Link } from 'react-router-dom'
 
-const FruitNav = () => {
+const FoodNav = () => {
   return (
-    <nav className='FruitNav'>
+    <nav className='FoodNav'>
       <ul>
         {
-          FRUIT_NAVS.map(({ label, url }) => {
+          FOOD_NAVS.map(({ label, url }) => {
             return (
               <li key={url}>
                 <Link to={url}>{label}</Link>
@@ -21,4 +21,4 @@ const FruitNav = () => {
   )
 }
 
-export default FruitNav
+export default FoodNav

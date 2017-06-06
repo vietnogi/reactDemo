@@ -1,0 +1,9 @@
+.FruitRouter {
+  > main {
+    display: flex;
+
+    .FruitNav {
+      margin-right: 20px;
+    }
+  }
+}

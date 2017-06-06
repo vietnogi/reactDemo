@@ -1,0 +1,10 @@
+.FoodNav {
+  > ul {
+    display: flex;
+    justify-content: center;
+
+    > li {
+      margin: 5px;
+    }
+  }
+}

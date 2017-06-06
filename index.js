@@ -2,6 +2,6 @@ import './styleGuide/reset'
 import './styleGuide/main'
 
 import ReactDOM from 'react-dom'
-import FruitRouter from './components/FruitRouter/FruitRouter'
+import FoodRouter from './components/FoodRouter/FoodRouter'
 
-ReactDOM.render(FruitRouter(), document.getElementById('root'))
+ReactDOM.render(FoodRouter(), document.getElementById('root'))
