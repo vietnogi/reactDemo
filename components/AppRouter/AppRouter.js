@@ -1,15 +1,15 @@
 import React from 'react'
-import { Router, Route, IndexRoute } from 'react-router'
-import App from 'components/App/App'
+import { BrowserRouter, Route } from 'react-router-dom'
 import Apples from 'components/Apples/Apples'
 
 const AppRouter = function () {
   return (
-    <Router>
-      <Route path='/' component={App} >
-        <IndexRoute component={Apples} />
-      </Route>
-    </Router>
+    <BrowserRouter>
+      <div>
+        <Route path='/' component={Apples} />
+        <Route path='/Apples' component={Apples} />
+      </div>
+    </BrowserRouter>
   )
 }
 

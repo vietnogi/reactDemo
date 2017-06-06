@@ -1,11 +1,8 @@
-import './ApplesS'
-
+import './ApplesStyles'
 import React from 'react'
-import PropTypes from 'prop-types'
+import { APPLE_IMAGE_URLS } from './ApplesConstants'
 
-import { APPLE_IMAGE_URLS } from 'constants/imageUrlsConstants'
-
-const Rentals = ({ children }) => {
+const Apples = () => {
   return (
     <div className='Apples'>
       <h2>Apples!</h2>
@@ -14,9 +11,9 @@ const Rentals = ({ children }) => {
 
       <ul>
         {
-          APPLE_IMAGE_URLS.map((url) => {
+          APPLE_IMAGE_URLS.map((url, i) => {
             return (
-              <li>
+              <li key={i}>
                 <img src={url} />
               </li>
             )
@@ -27,8 +24,4 @@ const Rentals = ({ children }) => {
   )
 }
 
-Rentals.propTypes = {
-  children: PropTypes.object,
-}
-
-export default Rentals
+export default Apples

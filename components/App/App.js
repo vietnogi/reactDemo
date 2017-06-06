@@ -1,24 +1,21 @@
-import './AppS'
+import './AppStyles'
 
 import React from 'react'
-import PropTypes from 'prop-types'
+import FruitNav from 'components/FruitNav/FruitNav'
+import AppRouter from 'components/AppRouter/AppRouter'
 
-const App = ({ children }) => {
+const App = () => {
   return (
     <div className='App'>
       <header>
         <h1>Fruits</h1>
       </header>
 
-      <main className='App'>
-        {children}
-      </main>
+      <FruitNav />
+
+      <AppRouter />
     </div>
   )
-}
-
-App.propTypes = {
-  children: PropTypes.object,
 }
 
 export default App

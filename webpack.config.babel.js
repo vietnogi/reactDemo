@@ -29,12 +29,10 @@ const output = {
 const devtool = 'cheap-module-eval-source-map'
 const module = getModule({ path, dirname })
 const utilitiesPath = path.join(dirname, '/utilities')
-const constantsPath = path.join(dirname, '/constants')
 const componentsPath = path.join(dirname, '/components')
 
 const alias = {
   utilities: utilitiesPath,
-  constants: constantsPath,
   components: componentsPath,
 }
 

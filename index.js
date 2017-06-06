@@ -2,6 +2,6 @@ import './styleGuide/reset'
 import './styleGuide/main'
 
 import ReactDOM from 'react-dom'
-import AppRouter from './components/AppRouter/AppRouter'
+import App from './components/App/App'
 
-ReactDOM.render(AppRouter(), document.getElementById('root'))
+ReactDOM.render(App(), document.getElementById('root'))

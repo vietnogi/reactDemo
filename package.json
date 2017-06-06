@@ -10,7 +10,7 @@
     "prop-types": "^15.5.10",
     "react": "^15.4.0",
     "react-dom": "^15.4.0",
-    "react-router": "^2.0.0"
+    "react-router-dom": "^4.1.1"
   },
   "devDependencies": {
     "babel-cli": "^6.6.0",
