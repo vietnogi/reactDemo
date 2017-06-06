@@ -9,6 +9,10 @@ const getModule = ({ path, dirname, istanbul }) => {
       plugins: ['jsx-control-statements'],
       babelrc: false,
     },
+  }, { /* hack to use es5 source map */
+    test: /\.js$/,
+    loader: 'transform-loader/cacheable?envify',
+    enforce: 'post',
   }, {
     test: /\.json$/,
     loader: 'json',

@@ -3,7 +3,6 @@ import { FRUIT_NAVS } from './FruitNavConstants'
 import { Link } from 'react-router-dom'
 
 const FruitNav = () => {
-  debugger
   return (
     <nav className='FruitNav'>
       <ul>
