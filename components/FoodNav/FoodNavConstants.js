@@ -2,8 +2,8 @@ export const FOOD_NAVS = [{
   label: 'Fruits',
   url: '/Fruits',
 }, {
-  label: 'Breads',
-  url: '/Breads',
+  label: 'Grains',
+  url: '/Grains',
 }, {
   label: 'Cheeses',
   url: '/Cheeses',

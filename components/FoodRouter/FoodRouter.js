@@ -3,6 +3,7 @@ import React from 'react'
 import { BrowserRouter, Route } from 'react-router-dom'
 import FoodNav from 'components/FoodNav/FoodNav'
 import FruitRouter from 'components/FruitRouter/FruitRouter'
+import GrainRouter from 'components/GrainRouter/GrainRouter'
 
 const FoodRouter = function () {
   return (
@@ -16,7 +17,9 @@ const FoodRouter = function () {
 
         <Route exact path='/' component={FruitRouter} />
 
-        <Route exact path='/Fruits' component={FruitRouter} />
+        <Route path='/Fruits' component={FruitRouter} />
+
+        <Route path='/Grains' component={GrainRouter} />
       </div>
     </BrowserRouter>
   )
