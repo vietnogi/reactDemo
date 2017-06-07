@@ -14,7 +14,7 @@ const getPlugins = ({ htmlWebpackPlugins = [] }) => {
 
   const commonChunk = new webpack.optimize.CommonsChunkPlugin({
     name: 'vendor',
-    filename: 'name].[hash].js',
+    filename: '[name].[hash].js',
   })
 
   plugins.push(commonChunk)

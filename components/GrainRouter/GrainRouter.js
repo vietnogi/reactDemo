@@ -1,8 +1,10 @@
 import './GrainRouterStyles'
 import React from 'react'
 import { BrowserRouter, Route } from 'react-router-dom'
-import Oats from 'components/Oats/Oats'
 import GrainNav from 'components/GrainNav/GrainNav'
+import Oats from 'components/Oats/Oats'
+import Rice from 'components/Rice/Rice'
+import Maize from 'components/Maize/Maize'
 
 const GrainRouter = function () {
   return (
@@ -18,6 +20,10 @@ const GrainRouter = function () {
           <Route exact path='/' component={Oats} />
 
           <Route path='/Oats' component={Oats} />
+
+          <Route path='/Rice' component={Rice} />
+
+          <Route path='/Maize' component={Maize} />
 
         </main>
       </div>
