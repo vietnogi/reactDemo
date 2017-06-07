@@ -2,14 +2,18 @@
 An introduction to ReactJS
 
 ## Prerequsites
-- NVM (https://www.google.com/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=how%20to%20install%20nvm)
-- Node 6.3.1 (http://coolestguidesontheplanet.com/installing-node-js-on-osx-10-10-yosemite/)
+- NVM
+- Node (the version is in the .nvmrc file)
 - Yarn (https://yarnpkg.com/lang/en/docs/)
 
-## Getting started, cloning and installing dependencies
+## Getting started
+- cd into the directory and run the following commands
 
 ```sh
 yarn install
 
 npm run server
 ```
+
+- go to localhost:9000 with your browser and the app should be running
+- open index.js and follow the code from there

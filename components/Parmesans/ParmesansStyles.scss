@@ -1,0 +1,16 @@
+.Parmesans {
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+
+    li {
+      margin: 25px;
+      padding: 10px;
+      background-color: #fff;
+    }
+
+    img {
+      width: 100px;
+    }
+  }
+}
