@@ -1,4 +1,20 @@
+import ExtractTextPlugin from 'extract-text-webpack-plugin'
+
 const getModule = ({ path, dirname, istanbul }) => {
+  const sassLoader = {
+    loader: 'sass-loader',
+    options: {
+      sourceMap: true,
+    },
+  }
+
+  const cssLoader = {
+    loader: 'css-loader',
+    options: {
+      sourceMap: true,
+    },
+  }
+
   const rules = [{
     test: /\.js$/,
     loader: 'babel-loader',
@@ -18,7 +34,10 @@ const getModule = ({ path, dirname, istanbul }) => {
     loader: 'json',
   }, {
     test: /\.scss$/,
-    use: [ 'style-loader', 'css-loader', 'sass-loader' ],
+    use: ExtractTextPlugin.extract({
+      fallback: 'style-loader',
+      use: [cssLoader, sassLoader],
+    }),
   }, {
     test: /\.(png|jpg|jpeg|gif)$/,
     loader: 'file-loader',

@@ -16,4 +16,4 @@ npm run server
 ```
 
 - go to localhost:9000 with your browser and the app should be running
-- open index.js and follow the code from there
+- open index.(js/html) with your favorite editor and follow the code from there
