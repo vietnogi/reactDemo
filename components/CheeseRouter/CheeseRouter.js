@@ -6,9 +6,9 @@ import Cheddars from 'components/Cheddars/Cheddars'
 import Mozzarellas from 'components/Mozzarellas/Mozzarellas'
 import Parmesans from 'components/Parmesans/Parmesans'
 
-const CheeseRouter = function () {
+const CheeseRouter = function ({ basename = '/Cheeses'}) {
   return (
-    <BrowserRouter basename='/Cheeses'>
+    <BrowserRouter basename={basename}>
       <div className='CheeseRouter'>
         <header>
           <h2>Cheeses</h2>
