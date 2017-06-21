@@ -1,5 +1,6 @@
 # React Demo
 An introduction to ReactJS
+The huge benefits React gives you are hard to fully explain to a newcomer, don't knock it until you've tried it!
 
 ## Prerequsites
 - NVM
@@ -20,10 +21,13 @@ npm run server
 
 ## Presentation
 
-### JSX and Virtual DOM
-
+### JSX and ReactJS in action
 - Watch about 2 minutes of https://youtu.be/LY6y3HbDVmg?t=137 on JSX
 
-- To understand how React is an h function go to https://babeljs.io/repl/#?babili=false&evaluate=true&lineWrap=false&presets=es2015%2Creact%2Cstage-2&targets=&browsers=&builtIns=false&debug=false&code=%3Cdiv%20className%3D%22name%22%3EHello%20World%3C%2Fdiv%3E
+- Watch JSX in action here https://youtu.be/05PVkl_Yxho
 
-- Lets create 
+- Watch how to create a component with ReactJS here https://youtu.be/zhdSlQ6jdZ4
+
+- Watch how to create a router with ReactJS here https://youtu.be/Nmz_GKfPfC0
+
+- Watch how to nest multiple routers with ReactJS here https://youtu.be/mdDjd4dYiB4
