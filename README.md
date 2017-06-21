@@ -1,6 +1,5 @@
 # React Demo
-An introduction to ReactJS
-The huge benefits React gives you are hard to fully explain to a newcomer, don't knock it until you've tried it!
+An introduction to ReactJS.  The huge benefits React gives you are hard to fully explain to a newcomer, don't knock it until you've tried it!
 
 ## Prerequsites
 - NVM
@@ -19,9 +18,7 @@ npm run server
 - go to localhost:9000 with your browser and the app should be running
 - open index.(js/html) with your favorite editor and follow the code from there
 
-## Presentation
-
-### JSX and ReactJS in action
+## Watch JSX and ReactJS in action
 - Watch about 2 minutes of https://youtu.be/LY6y3HbDVmg?t=137 on JSX
 
 - Watch JSX in action here https://youtu.be/05PVkl_Yxho
