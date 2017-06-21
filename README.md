@@ -1,5 +1,5 @@
 # React Demo
-An introduction to ReactJS.  The huge benefits React gives you are hard to fully explain to a newcomer.  You will understand it once you use it.
+An introduction to ReactJS. React is ONLY THE VIEW LAYER and the demo is simple. The huge benefits React gives you are hard to fully explain to a newcomer.  You will understand it once you use it.
 
 ## Prerequsites
 - NVM
