@@ -1,5 +1,5 @@
 # React Demo
-An introduction to ReactJS.  The huge benefits React gives you are hard to fully explain to a newcomer, don't knock it until you've tried it!
+An introduction to ReactJS.  The huge benefits React gives you are hard to fully explain to a newcomer.  You will understand it once you use it.
 
 ## Prerequsites
 - NVM
