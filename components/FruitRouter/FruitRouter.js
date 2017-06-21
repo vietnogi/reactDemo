@@ -5,7 +5,6 @@ import Apples from 'components/Apples/Apples'
 import Pears from 'components/Pears/Pears'
 import Berries from 'components/Berries/Berries'
 import FruitNav from 'components/FruitNav/FruitNav'
-import CheeseRouter from 'components/CheeseRouter/CheeseRouter'
 
 const FruitRouter = function () {
   return (
@@ -25,8 +24,6 @@ const FruitRouter = function () {
           <Route path='/Pears' component={Pears} />
 
           <Route path='/Berries' component={Berries} />
-
-          <CheeseRouter basename={'/Fruits'} />
         </main>
       </div>
     </BrowserRouter>
